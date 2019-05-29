@@ -1,0 +1,29 @@
+try {
+            arqEmprestimos = new Arquivo<>(Emprestimo.class.getConstructor(), "emprestimos.db");
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        if (id <= 0)
+            return;
+
+        Emprestimo obj;
+        ArrayList<Pessoa> trabs = new ArrayList<>();
+        String[] fers = new String[100];
+        String ferAtuais = "";
+        if( (obj = (Emprestimo) arqEmprestimos.buscar(id))!=null ) {
+             Emprestimo_CRUD.alterarEmprestimo(obj.getId(), obj.getDataEmprestimo(),obj.getDataRetorno(), obj.getFerramenta(), obj.getQuantFer(), false,false);
+             for (int i = 0; i < trabs.size(); i++){
+                 String f = trabs.get(i).getFerAtuais();
+                 fers = f.split(",");
+                 for (int j = 0; j < fers.length; j++){
+                     if (fers[j] != obj.getFerramenta()){
+                         ferAtuais += ferAtuais;
+                     }
+                 }
+                 Pessoa_CRUD.alterarTrab(trabs.get(i).getId(),trabs.get(i).getNome(),trabs.get(i).getObraAtual(),ferAtuais, false);
+                 ferAtuais = "";
+                 String quant = obj.getFerramenta().substring(0,0);
+                 System.out.println("Quantidade:" + quant);
+             }
+        }
+

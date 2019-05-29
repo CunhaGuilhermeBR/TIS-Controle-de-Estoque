@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="out/artifacts/TIS___Controle_de_Estoque_jar/TIS - Controle de Estoque.jar"/>
+	<classpathentry kind="output" path="out/production/TIS - Controle de Estoque"/>
+</classpath>
