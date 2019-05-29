@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="TIS - Controle de Estoque">
+    <output-path>$PROJECT_DIR$/out/artifacts/TIS___Controle_de_Estoque</output-path>
+    <root id="root">
+      <element id="archive" name="TIS___Controle_de_Estoque.jar">
+        <element id="module-output" name="TIS - Controle de Estoque" />
+      </element>
+    </root>
+  </artifact>
+</component>

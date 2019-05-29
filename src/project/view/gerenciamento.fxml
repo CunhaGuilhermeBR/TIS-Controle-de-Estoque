@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="1031.0" stylesheets="@../../darktheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.MenuController">
+    <children>
+        <SplitPane dividerPositions="0.09037900874635568" focusTraversable="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="777.0" prefWidth="1113.0" scaleShape="false" stylesheets="@../../darktheme.css">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" stylesheets="@../../darktheme.css">
+                    <children>
+                        <ImageView fitHeight="85.0" fitWidth="175.0" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" y="30.0">
+                            <image>
+                                <Image url="@../../image/logo.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToCadObra" prefHeight="33.0" prefWidth="200.0" text="Cadastrar obra" />
+                        <Button layoutX="50.0" layoutY="190.0" mnemonicParsing="false" onAction="#goToCadMat" prefHeight="33.0" prefWidth="200.0" text="Cadastrar material" />
+                        <Button layoutX="50.0" layoutY="240.0" mnemonicParsing="false" onAction="#goToCadFer" prefHeight="33.0" prefWidth="200.0" text="Cadastrar ferramenta" />
+                        <Button layoutX="50.0" layoutY="290.0" mnemonicParsing="false" onAction="#goToCadTrab" prefHeight="33.0" prefWidth="200.0" text="Cadastrar trabalhador" />
+                        <Button layoutX="50.0" layoutY="340.0" mnemonicParsing="false" onAction="#goToListObra" prefHeight="33.0" prefWidth="200.0" text="Listar obras" />
+                        <Button layoutX="50.0" layoutY="390.0" mnemonicParsing="false" onAction="#goToListMat" prefHeight="33.0" prefWidth="200.0" text="Listar materiais" />
+                        <Button layoutX="50.0" layoutY="440.0" mnemonicParsing="false" onAction="#goToListFer" prefHeight="33.0" prefWidth="200.0" text="Listar ferramentas" />
+                        <Button layoutX="50.0" layoutY="490.0" mnemonicParsing="false" onAction="#goToListTrab" prefHeight="33.0" prefWidth="200.0" text="Listar trabalhadores" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarTrab.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarFerramentas.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarMaterial.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarObras.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconTrab.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconFerramenta.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" layoutX="25.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconMaterial.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconObra.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="540.0" mnemonicParsing="false" onAction="#goToEmprest" prefHeight="33.0" prefWidth="200.0" text="Empréstimo" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconEmprestimo.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="590.0" mnemonicParsing="false" onAction="#goToUtili" prefHeight="33.0" prefWidth="200.0" text="Utilização" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconUtilizacao.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="640.0" mnemonicParsing="false" onAction="#goToGer" prefHeight="33.0" prefWidth="200.0" text="Gerenciar" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconGerenciar.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="690.0" mnemonicParsing="false" onAction="#fechar" prefHeight="33.0" prefWidth="200.0" text="Sair" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="690.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconSair.png" />
+                            </image>
+                        </ImageView>
+                    </children></AnchorPane>
+                <AnchorPane>
+                    <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="774.0" prefWidth="931.0">
+                            <children>
+                                <ImageView fitHeight="57.0" fitWidth="66.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../image/iconGerenciar2.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="519.0" layoutY="30.0" text="Gerenciamento" />
+<Pane fx:id="paneMaterial" visible="false"><children>
+                              <Button fx:id="butExcluirMatGer" layoutX="226.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleExcluirMat" text="Excluir" />
+                              <Button fx:id="butAlterarMatGer" layoutX="524.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAlterarMat" text="Alterar" />
+                              <Button fx:id="butBuscarMatGer" layoutX="846.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleBuscarMat" text="Buscar" />
+                              <Label fx:id="labelMatGer" layoutX="542.0" layoutY="140.0" text="Material" visible="true" />
+                              <TextField fx:id="idMaterial" layoutX="467.0" layoutY="283.0" promptText="ID" visible="false" />
+                              <Button fx:id="butExcluirMat" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#deleteMat" text="Finalizar" visible="false" />
+                              <TextField fx:id="alterarNomeMat" layoutX="468.0" layoutY="333.0" promptText="Nome" visible="false" />
+                              <TextField fx:id="alterarQuantMat" layoutX="468.0" layoutY="383.0" promptText="Quantidade" visible="false" />
+                              <TextField fx:id="alterarUnMed" layoutX="468.0" layoutY="433.0" promptText="Unidade de Medida" visible="false" />
+                              <Button fx:id="butAlterarMat" layoutX="515.0" layoutY="490.0" mnemonicParsing="false" onAction="#updateMat" text="Finalizar" visible="false" />
+                              <Button fx:id="butBuscarMat" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#buscarMat" text="Finalizar" visible="false" />
+    <Button layoutX="524.0" layoutY="620.0" mnemonicParsing="false" onAction="#voltarMat" text="Voltar" />
+
+</children>
+</Pane>
+                                <Pane fx:id="paneObra" visible="false"><children>
+                                        <Button fx:id="butExcluirObraGer" layoutX="226.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleExcluirObra" text="Excluir" />
+                                        <Button fx:id="butAlterarObraGer" layoutX="423.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAlterarObra" text="Alterar" />
+                                        <Button fx:id="butBuscarObraGer" layoutX="846.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleBuscarObra" text="Buscar" />
+                                    <Button fx:id="butAddTrab" layoutX="599.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAddTrab" text="Adicionar trabalhador" />
+                                    <Label fx:id="labelgerObra" layoutX="554.0" layoutY="140.0" text="Obra" visible="true" />
+                                        <TextField fx:id="idObra" layoutX="467.0" layoutY="283.0" promptText="ID da obra" visible="false" />
+                                        <Button fx:id="butExcluirObra" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#deleteObra" text="Finalizar" visible="false" />
+                                        <TextField fx:id="alterarNomeObra" layoutX="468.0" layoutY="333.0" promptText="Nome" visible="false" />
+                                        <TextField fx:id="alterarTrabs" layoutX="468.0" layoutY="383.0" promptText="Trabalhadores" visible="false" />
+                                        <Button fx:id="butAlterarObra" layoutX="515.0" layoutY="433.0" mnemonicParsing="false" onAction="#updateObra" text="Finalizar" visible="false" />
+                                        <Button fx:id="butBuscarObra" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#buscarObra" text="Finalizar" visible="false" />
+                                    <Button fx:id="butAddTrabMesmo" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#addTrab" text="Finalizar" visible="false" />
+                                    <Button layoutX="524.0" layoutY="620.0" mnemonicParsing="false" onAction="#voltarObra" text="Voltar" />
+                               <ComboBox fx:id="trabsObra" layoutX="471.0" layoutY="333.0" onMouseClicked="#carregaComboBox" prefHeight="26.0" prefWidth="200.0" promptText="Trabalhador" visible="false"> </ComboBox>
+                                </children></Pane>
+
+                                <Pane fx:id="paneFerramenta" visible="false"><children>
+                                        <Button fx:id="butExcluirFerGer" layoutX="226.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleExcluirFerramenta" text="Excluir" />
+                                        <Button fx:id="butAlterarFerGer" layoutX="524.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAlterarFerramenta" text="Alterar" />
+                                        <Button fx:id="butBuscarFerGer" layoutX="846.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleBuscarFerramenta" text="Buscar" />
+                                        <Label fx:id="labelFerGer" layoutX="554.0" layoutY="140.0" text="Ferramenta" visible="true" />
+                                        <TextField fx:id="idFerramenta" layoutX="467.0" layoutY="283.0" promptText="ID" visible="false" />
+                                        <Button fx:id="butExcluirFerramenta" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#deleteFerramenta" text="Finalizar" visible="false" />
+                                        <TextField fx:id="alterarNomeFerramenta" layoutX="468.0" layoutY="333.0" promptText="Nome" visible="false" />
+                                        <TextField fx:id="alterarQuantFerramenta" layoutX="468.0" layoutY="383.0" promptText="Quantidade" visible="false" />
+                                        <TextField fx:id="alterarMarca" layoutX="468.0" layoutY="433.0" promptText="Marca" visible="false" />
+                                        <Button fx:id="butAlterarFerramenta" layoutX="515.0" layoutY="490.0" mnemonicParsing="false" onAction="#updateFerramenta" text="Finalizar" visible="false" />
+                                        <Button fx:id="butBuscarFerramenta" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" onAction="#buscarFerramenta" text="Finalizar" visible="false" />
+                                    <Button layoutX="524.0" layoutY="620.0" mnemonicParsing="false" onAction="#voltarFer" text="Voltar" />
+                                </children></Pane>
+                                <Pane fx:id="paneTrab" prefHeight="777.0" prefWidth="937.0" visible="false">
+                           <children>
+                                        <Button fx:id="butExcluirTrabGer" layoutX="226.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleExcluirTrab" text="Excluir" />
+                                        <Button fx:id="butAlterarTrabGer" layoutX="524.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAlterarTrab" text="Alterar" />
+                                        <Button fx:id="butBuscarTrabGer" layoutX="846.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleBuscarTrab" text="Buscar" />
+                                        <Label fx:id="labelTrabGer" layoutX="530.0" layoutY="140.0" text="Trabalhador" visible="true" />
+                                        <TextField fx:id="idTrab" layoutX="467.0" layoutY="260.0" promptText="ID" visible="false" />
+                                        <Button fx:id="butExcluirTrab" layoutX="519.0" layoutY="401.0" mnemonicParsing="false" onAction="#deleteTrab" text="Finalizar" visible="false" />
+                                        <TextField fx:id="alterarNomeTrab" layoutX="467.0" layoutY="297.0" promptText="Nome" visible="false" />
+                                        <TextField fx:id="alterarObraAtual" layoutX="467.0" layoutY="334.0" promptText="Obra atual" visible="false" />
+                                        <Button fx:id="butAlterarTrab" layoutX="520.0" layoutY="401.0" mnemonicParsing="false" onAction="#updateTrab" text="Finalizar" visible="false" />
+                                        <Button fx:id="butBuscarTrab" layoutX="519.0" layoutY="401.0" mnemonicParsing="false" onAction="#buscarTrab" text="Finalizar" visible="false" />
+                                          <Button layoutX="524.0" layoutY="620.0" mnemonicParsing="false" onAction="#voltarTrab" text="Voltar" />
+                           </children>
+                        </Pane>
+
+                        <Button fx:id="butGerObra" layoutX="405.0" layoutY="84.0" mnemonicParsing="false" onAction="#gerenciarObra" prefHeight="33.0" prefWidth="138.0" text="Obra" />
+                        <Button fx:id="butGerFer" layoutX="605.0" layoutY="84.0" mnemonicParsing="false" onAction="#gerenciarFer" prefHeight="33.0" prefWidth="138.0" text="Ferramenta" />
+                        <Button fx:id="butGerMat" layoutX="202.0" layoutY="84.0" mnemonicParsing="false" onAction="#gerenciarMat" prefHeight="33.0" prefWidth="138.0" text="Material" />
+                        <Button fx:id="butGerTrab" layoutX="793.0" layoutY="84.0" mnemonicParsing="false" onAction="#gerenciarTrab" prefHeight="33.0" prefWidth="138.0" text="Trabalhador" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</StackPane>

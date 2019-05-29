@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../darktheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.Controller">
+    <children>
+        <TextField fx:id="loginSignup" layoutX="296.0" layoutY="130.0" promptText="Usuário" />
+        <PasswordField fx:id="passwordSignUp" layoutX="296.0" layoutY="180.0" promptText="Senha" />
+        <TextField fx:id="questionSignUp" layoutX="296.0" layoutY="230.0" promptText="Pergunta Secreta" />
+        <TextField fx:id="answerSignUp" layoutX="296.0" layoutY="280.0" promptText="Resposta " />
+        <TextField fx:id="nomeSignUp" layoutX="296.0" layoutY="330.0" promptText="Nome" />
+        <Button layoutX="296.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleFinalizeCadastro" prefHeight="33.0" prefWidth="204.0" text="Finalizar Cadastro" />
+        <Label layoutX="369.0" layoutY="102.0" text="Cadastro" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="299.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/logo.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="loginFail" layoutX="308.0" layoutY="427.0" text="Usuário e/ou senha errados" visible="false" />
+        <Label fx:id="signUpComplete" layoutX="334.0" layoutY="427.0" text="Cadastro concluido" visible="false" />
+
+
+    </children>
+</Pane>

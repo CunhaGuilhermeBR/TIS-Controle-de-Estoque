@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="1031.0" stylesheets="@../../darktheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.MenuController">
+    <children>
+        <SplitPane dividerPositions="0.09037900874635568" focusTraversable="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="777.0" prefWidth="1113.0" scaleShape="false" stylesheets="@../../darktheme.css">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" stylesheets="@../../darktheme.css">
+                    <children>
+                        <ImageView fitHeight="85.0" fitWidth="175.0" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" y="30.0">
+                            <image>
+                                <Image url="@../../image/logo.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="butCadObra" layoutX="50.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToCadObra" prefHeight="33.0" prefWidth="200.0" text="Cadastrar obra" />
+                        <Button layoutX="50.0" layoutY="190.0" mnemonicParsing="false" onAction="#goToCadMat" prefHeight="33.0" prefWidth="200.0" text="Cadastrar material" />
+                        <Button layoutX="50.0" layoutY="240.0" mnemonicParsing="false" onAction="#goToCadFer" prefHeight="33.0" prefWidth="200.0" text="Cadastrar ferramenta" />
+                        <Button layoutX="50.0" layoutY="290.0" mnemonicParsing="false" onAction="#goToCadTrab" prefHeight="33.0" prefWidth="200.0" text="Cadastrar trabalhador" />
+                        <Button layoutX="50.0" layoutY="340.0" mnemonicParsing="false" onAction="#goToListObra" prefHeight="33.0" prefWidth="200.0" text="Listar obras" />
+                        <Button layoutX="50.0" layoutY="390.0" mnemonicParsing="false" onAction="#goToListMat" prefHeight="33.0" prefWidth="200.0" text="Listar materiais" />
+                        <Button layoutX="50.0" layoutY="440.0" mnemonicParsing="false" onAction="#goToListFer" prefHeight="33.0" prefWidth="200.0" text="Listar ferramentas" />
+                        <Button layoutX="50.0" layoutY="490.0" mnemonicParsing="false" onAction="#goToListTrab" prefHeight="33.0" prefWidth="200.0" text="Listar trabalhadores" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarTrab.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarFerramentas.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarMaterial.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconListarObras.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconTrab.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconFerramenta.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" layoutX="25.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconMaterial.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconObra.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="540.0" mnemonicParsing="false" onAction="#goToEmprest" prefHeight="33.0" prefWidth="200.0" text="Empréstimo" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconEmprestimo.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="590.0" mnemonicParsing="false" onAction="#goToUtili" prefHeight="33.0" prefWidth="200.0" text="Utilização" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconUtilizacao.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="640.0" mnemonicParsing="false" onAction="#goToGer" prefHeight="33.0" prefWidth="200.0" text="Gerenciar" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconGerenciar.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="50.0" layoutY="690.0" mnemonicParsing="false" onAction="#fechar" prefHeight="33.0" prefWidth="200.0" text="Sair" />
+                        <ImageView fitHeight="33.0" fitWidth="240.0" layoutX="25.0" layoutY="690.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/iconSair.png" />
+                            </image>
+                        </ImageView>
+                    </children></AnchorPane>
+                <AnchorPane>
+                    <children>
+                        <AnchorPane layoutY="30.0" minHeight="0.0" minWidth="0.0" prefHeight="774.0" prefWidth="931.0">
+                            <children>
+                                <ImageView fitHeight="57.0" fitWidth="66.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../image/iconFerramenta.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="519.0" layoutY="30.0" text="Cadastrar ferramenta" />
+                                <TextField fx:id="nomeFer" layoutX="487.0" layoutY="170.0" promptText="Nome" />
+                                <TextField fx:id="quantFer" layoutX="487.0" layoutY="230.0" promptText="Quantidade" />
+                                <TextField fx:id="marcaFer" layoutX="487.0" layoutY="290.0" promptText="Marca" />
+                                <Button fx:id="butCadFer" layoutX="487.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleFinalizeCadFer" prefHeight="33.0" prefWidth="206.0" text="Finalizar cadastro" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</StackPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane stylesheets="@../../darktheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.Controller">
+   <children>
+      <BorderPane>
+         <center>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0">
+            <children>
+                  <AnchorPane fx:id="screenLogin" layoutX="251.0" layoutY="14.0" prefHeight="464.0" prefWidth="721.0">
+                     <children>
+                        <TextField id="campoLogin" fx:id="campoLogin" layoutX="140.0" layoutY="124.0" prefWidth="220.0" promptText="Login" />
+                        <PasswordField fx:id="campoSenha" layoutX="140.0" layoutY="161.0" prefWidth="220.0" promptText="Senha" />
+                        <Hyperlink fx:id="lembrarSenha" layoutX="175.0" layoutY="199.0" text="Esqueci minha senha" onAction="#handleRecuperarSenha" />
+                        <Button id="butLogin" layoutX="140.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#handleButtonActionEnter" prefHeight="25.0" prefWidth="110.0" text="Login" />
+                        <Button id="butSignUp" layoutX="250.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleButtonActionSignUp" prefHeight="25.0" prefWidth="110.0" text="Cadastrar" />
+                        <Label fx:id="signUpComplete" layoutX="155.0" layoutY="274.0" text="Cadastro concluido" visible="false" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="loginFail" layoutX="155.0" layoutY="274.0" text="Usuário e/ou senha errados" visible="false" />
+                     </children>
+                  </AnchorPane>
+            </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
